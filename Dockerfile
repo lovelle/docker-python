@@ -23,4 +23,4 @@ COPY ./commands/*.sh /commands/
 
 ONBUILD ADD ./ /app/
 ONBUILD WORKDIR /app
-ONBUILD CMD /commands/test.sh && /commands/package.sh
+ONBUILD RUN /commands/test.sh && /commands/package.sh
